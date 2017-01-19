@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Octocat</string>
+    <string name="txt_email">E-mail</string>
+    <string name="txt_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="username_is_required">E-mail is required</string>
+    <string name="password_is_required">Password is required</string>
+    <string name="credentials_invalid">E-mail or Password is Incorrect</string>
+    <string name="logged">You\'re in!</string>
+</resources>
