@@ -1,5 +1,6 @@
 package com.github.thebergamo.octocat.view.activity;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements LoginView {
     protected EditText userPassword;
     protected Button btnLogin;
 
-    private LoginPresenterImpl loginPresenter;
+    private LoginPresenter loginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,29 +54,29 @@ public class MainActivity extends AppCompatActivity implements LoginView {
 
     @Override
     public void showUsernameIsRequired() {
-         Toast
-            .makeText(getApplicationContext(), R.string.username_is_required, Toast.LENGTH_SHORT)
-            .show();
+        Snackbar.make(findViewById(R.id.activity_main), R.string.username_is_required, Snackbar.LENGTH_SHORT)
+                .show();
+        
     }
 
     @Override
     public void showPasswordIsRequired() {
-        Toast
-            .makeText(getApplicationContext(), R.string.password_is_required, Toast.LENGTH_SHORT)
-            .show();
+        Snackbar
+                .make(findViewById(R.id.activity_main), R.string.password_is_required, Snackbar.LENGTH_SHORT)
+                .show();
     }
 
     @Override
     public void showUsernameOrPasswordIsIncorrect() {
-        Toast
-            .makeText(getApplicationContext(), R.string.credentials_invalid, Toast.LENGTH_SHORT)
-            .show();
+        Snackbar
+                .make(findViewById(R.id.activity_main), R.string.credentials_invalid, Snackbar.LENGTH_SHORT)
+                .show();
     }
 
     @Override
     public void showLogged() {
-        Toast
-            .makeText(getApplicationContext(), R.string.logged, Toast.LENGTH_SHORT)
-            .show();
+        Snackbar
+                .make(findViewById(R.id.activity_main), R.string.logged, Snackbar.LENGTH_SHORT)
+                .show();
     }
 }
