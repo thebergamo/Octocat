@@ -1,6 +1,4 @@
-package com.github.thebergamo.octocat.presentation;
-
-import com.github.thebergamo.octocat.view.LoginView;
+package com.github.thebergamo.octocat.common.login;
 
 /**
  * Created by thebergamo on 19/01/17.

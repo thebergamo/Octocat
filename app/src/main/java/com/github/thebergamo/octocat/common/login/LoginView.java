@@ -1,4 +1,4 @@
-package com.github.thebergamo.octocat.view;
+package com.github.thebergamo.octocat.common.login;
 
 /**
  * Created by thebergamo on 18/01/17.

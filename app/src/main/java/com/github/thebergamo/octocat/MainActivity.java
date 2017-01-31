@@ -1,4 +1,4 @@
-package com.github.thebergamo.octocat.view.activity;
+package com.github.thebergamo.octocat;
 
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -6,12 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.github.thebergamo.octocat.R;
-import com.github.thebergamo.octocat.presentation.LoginPresenter;
-import com.github.thebergamo.octocat.presentation.LoginPresenterImpl;
-import com.github.thebergamo.octocat.view.LoginView;
+import com.github.thebergamo.octocat.common.login.LoginPresenter;
+import com.github.thebergamo.octocat.common.login.LoginPresenterImpl;
+import com.github.thebergamo.octocat.common.login.LoginView;
 
 public class MainActivity extends AppCompatActivity implements LoginView {
 
